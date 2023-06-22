@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(5, 65, 45);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 300px;
+    text-indent: 12px;
+
+}
+
+button {
+    height: 33px;
+    width: 90px;
+    background-color: rgb(73, 73, 227);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 2px;
+
+}
+
+button:hover {
+    color: darkcyan;
+    background-color: lightgreen;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
