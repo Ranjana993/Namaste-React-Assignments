@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  color: #fff;
+  background-color: #082702;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#items > ul {
+  display: flex;
+}
+
+#items > ul > li {
+  margin-right: 1.2rem;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+#title > img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+#footer {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: #082702;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 600;
+  bottom: 0;
+}
+
+#footer > p {
+  font-size: 1.2rem;
+}
+
+#card {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 330px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: -1px 4px 20px 14px #0003;
+}
+
+#card:hover {
+  padding: 17px;
+  box-shadow: -1px 4px 20px 14px #38363633;
+}
+
+.card > span {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.card > span > h4 {
+  text-align: center;
+}
+
+#card > img {
+  width: 100%;
+}
+
+.restaurant-list {
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem auto auto;
+  display: flex;
+}
+
+#search-bar {
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0;
+  display: flex;
+}
+
+#search-bar > input {
+  text-indent: 12px;
+  outline: none;
+  width: 300px;
+  height: 30px;
+}
+
+button {
+  color: #fff;
+  background-color: #383303;
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 32px;
+}
+
+button:hover {
+  color: #008b8b;
+  background-color: #fff;
+  border: 2px solid #383303;
+  font-weight: 600;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 4px;
+  display: flex;
+}
+
+.box {
+  cursor: pointer;
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  width: 330px;
+  height: 300px;
+  margin: 20px;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
