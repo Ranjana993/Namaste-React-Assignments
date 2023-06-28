@@ -33629,45 +33629,75 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _profileClassBased = require("./ProfileClassBased");
-var _profileClassBasedDefault = parcelHelpers.interopDefault(_profileClassBased);
+var _profile = require("./Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _reactRouterDom = require("react-router-dom");
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "This is about pages......"
-                    }, void 0, false, {
-                        fileName: "Pages/About.js",
-                        lineNumber: 8,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum obcaecati placeat earum corporis maiores sit id, tempora inventore optio. Enim est dolor quam iusto quae distinctio veniam eaque dolores?"
-                    }, void 0, false, {
-                        fileName: "Pages/About.js",
-                        lineNumber: 9,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                id: "wrapper",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            children: "Find ur dream food at  instantly "
+                        }, void 0, false, {
+                            fileName: "Pages/About.js",
+                            lineNumber: 10,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "We are enlighted to share you that we are offering 20% discount on first order of food .."
+                        }, void 0, false, {
+                            fileName: "Pages/About.js",
+                            lineNumber: 11,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit distinctio, culpa quibusdam laudantium ut consequatur blanditiis itaque vero, nobis quod commodi odio sint maiores vitae mollitia doloremque natus autem! Quod?"
+                        }, void 0, false, {
+                            fileName: "Pages/About.js",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            children: "Explore more ..."
+                        }, void 0, false, {
+                            fileName: "Pages/About.js",
+                            lineNumber: 13,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "Pages/About.js",
+                    lineNumber: 9,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
                 fileName: "Pages/About.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "RENDERING PROFILE COMPONENT "
+                style: {
+                    textAlign: "center",
+                    margin: "2rem",
+                    fontSize: "2rem",
+                    textTransform: "uppercase"
+                },
+                children: "Get To know About Me..... "
             }, void 0, false, {
                 fileName: "Pages/About.js",
-                lineNumber: 12,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassBasedDefault.default), {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
                 name: "Ranjana from class component "
             }, void 0, false, {
                 fileName: "Pages/About.js",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined)
         ]
@@ -33683,11 +33713,11 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ProfileClassBased":"71zjw"}],"71zjw":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2399 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Profile":"4kus9","react-router-dom":"9xmpe"}],"4kus9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ae71 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2399.prelude(module);
+$parcel$ReactRefreshHelpers$ae71.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33695,67 +33725,181 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class ProfileClassBsed extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            count: 0
-        };
-    }
-    render() {
-        const { count  } = this.state;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "This is class based Component of profile ....."
-                }, void 0, false, {
-                    fileName: "Pages/ProfileClassBased.js",
-                    lineNumber: 21,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: [
-                        "My name is : ",
-                        this.props.name
-                    ]
-                }, void 0, true, {
-                    fileName: "Pages/ProfileClassBased.js",
-                    lineNumber: 22,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: [
-                        "This is count : ",
-                        count,
-                        " "
-                    ]
-                }, void 0, true, {
-                    fileName: "Pages/ProfileClassBased.js",
-                    lineNumber: 23,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: this.setState({
-                        count: 1
-                    }),
-                    children: "add"
-                }, void 0, false, {
-                    fileName: "Pages/ProfileClassBased.js",
-                    lineNumber: 24,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true);
-    }
-}
-exports.default = ProfileClassBsed;
+// import ChildProfile from '../Component/ChildProfile1';
+var _childProfile1 = require("../Component/ChildProfile1");
+var _childProfile1Default = parcelHelpers.interopDefault(_childProfile1);
+var _childProfile2 = require("../Component/ChildProfile2");
+var _childProfile2Default = parcelHelpers.interopDefault(_childProfile2);
+const Profile = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _childProfile1Default.default), {
+                name: "My name is Ranjana "
+            }, void 0, false, {
+                fileName: "Pages/Profile.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _childProfile2Default.default), {
+                name: "My name is Yadav "
+            }, void 0, false, {
+                fileName: "Pages/Profile.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c = Profile;
+exports.default = Profile;
+var _c;
+$RefreshReg$(_c, "Profile");
 
-  $parcel$ReactRefreshHelpers$2399.postlude(module);
+  $parcel$ReactRefreshHelpers$ae71.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dbAeu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Component/ChildProfile1":"dFvUR","../Component/ChildProfile2":"8gKiR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dFvUR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6173 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6173.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// https://api.github.com/users/Ranjana993
+class ChildProfile extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            userInfo: {
+                name: "",
+                bio: ""
+            }
+        };
+    }
+    async componentDidMount() {
+        const res = await fetch("https://api.github.com/users/Ranjana993");
+        const json = await res.json();
+        this.setState({
+            userInfo: json
+        });
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-about-me",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "about-img",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: this.state.userInfo.avatar_url,
+                            alt: "about me"
+                        }, void 0, false, {
+                            fileName: "Component/ChildProfile1.js",
+                            lineNumber: 30,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "Component/ChildProfile1.js",
+                        lineNumber: 29,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "detail-about",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: [
+                                    "Name : ",
+                                    this.state.userInfo.name
+                                ]
+                            }, void 0, true, {
+                                fileName: "Component/ChildProfile1.js",
+                                lineNumber: 33,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: [
+                                    "Location :",
+                                    this.state.userInfo.location
+                                ]
+                            }, void 0, true, {
+                                fileName: "Component/ChildProfile1.js",
+                                lineNumber: 34,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: this.state.userInfo.bio
+                            }, void 0, false, {
+                                fileName: "Component/ChildProfile1.js",
+                                lineNumber: 35,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "Component/ChildProfile1.js",
+                        lineNumber: 32,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "Component/ChildProfile1.js",
+                lineNumber: 28,
+                columnNumber: 17
+            }, this)
+        }, void 0, false);
+    }
+}
+exports.default = ChildProfile;
+
+  $parcel$ReactRefreshHelpers$6173.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8gKiR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3a6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3a6f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class ChildProfile extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {};
+    }
+    componentDidMount() {
+    // console.log("ProfileUserClass child componentDidMount");
+    }
+    componentDidUpdate() {
+    // console.log("ProfileUserClass child componentDidUpdate");
+    }
+    componentWillUnmount() {
+    // console.log("ProfileUserClass child componentWillUnmount");
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false);
+    }
+}
+exports.default = ChildProfile;
+
+  $parcel$ReactRefreshHelpers$3a6f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"dbAeu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5050 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

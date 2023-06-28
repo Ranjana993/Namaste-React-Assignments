@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+// import ChildProfile from '../Component/ChildProfile1';
+import ChildProfile1 from '../Component/ChildProfile1';
+import ChildProfile2 from '../Component/ChildProfile2';
+
 
 const Profile = () => {
-    const [count, setCount] = useState(0);
 
     return (
         <>
-            <div>Profile</div>
-            <h1>Count : {count}</h1>
-            <button onClick={() => setCount(count + 1)}>+</button>
+            <ChildProfile1  name={"My name is Ranjana "}/>
+            <ChildProfile2 name={"My name is Yadav "} />
         </>
     )
 }

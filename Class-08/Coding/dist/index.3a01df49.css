@@ -296,4 +296,71 @@ a {
   color: #379237 !important;
 }
 
+#wrapper {
+  contain: content;
+  z-index: -1;
+  background: url("about-us1.fe20c59c.jpg") center / cover no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+
+.content {
+  float: right;
+  flex-flow: column wrap;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.content > h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 7rem;
+  padding: 1rem;
+  font-size: 200%;
+}
+
+.content > p {
+  color: #fff;
+  width: 60%;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.content > a {
+  color: #fff;
+  background-color: #08b619;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.card-about-me {
+  background-color: #e0ffff;
+  border: 1px solid #d3d3d3;
+  justify-content: center;
+  width: 100vh;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+}
+
+.about-img > img {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.detail-about {
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.detail-about > p {
+  line-height: none;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */
