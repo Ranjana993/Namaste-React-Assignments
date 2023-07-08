@@ -1,0 +1,393 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans, Lato, Calibri, sans-serif;
+  overflow-x: hidden;
+}
+
+#header {
+  color: #fff;
+  background-color: #41644a;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 12px 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#items > ul {
+  display: flex;
+}
+
+#items > ul > li {
+  margin-right: 1.2rem;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+#items > ul > li :hover {
+  color: orange;
+}
+
+#title > img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+#footer {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 600;
+  bottom: 0;
+}
+
+#footer > p, h3 {
+  font-size: 1.2rem;
+}
+
+#card {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 240px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: -1px 5px 10px 5px #70707033;
+}
+
+#card:hover {
+  transform: scale(1.02);
+  box-shadow: -1px 4px 20px 14px #38363633;
+}
+
+#card > h2 {
+  color: #00090c;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#card > h4 {
+  font-size: 70%;
+  font-weight: 300;
+}
+
+#card > span {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+#card > span > h4 {
+  text-align: center;
+}
+
+#card > img {
+  width: 100%;
+}
+
+#card > span > h4:first-child {
+  color: #fff;
+  background-color: #379237;
+  border-radius: 5px;
+  align-items: center;
+  margin-top: 5px;
+  padding: 5px;
+  display: flex;
+}
+
+#card > span > h4:first-child .fa-star {
+  padding: 2px 5px 3px 0;
+  font-size: 10px;
+}
+
+.restaurant-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  margin: 2rem auto auto;
+  display: flex;
+}
+
+#search-bar {
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0;
+  display: flex;
+}
+
+#search-bar > input {
+  text-indent: 12px;
+  outline: none;
+  width: 300px;
+  height: 30px;
+}
+
+button {
+  color: #fff;
+  background-color: #41644a;
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 32px;
+}
+
+button:hover {
+  color: #008b8b;
+  background-color: orange;
+  border: 3px solid orange;
+  font-weight: 600;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 4px;
+  display: flex;
+}
+
+.box {
+  cursor: pointer;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  width: 240px;
+  height: 250px;
+  margin: 20px;
+  padding: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact {
+  height: 80vh;
+}
+
+.contact > form {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  margin: auto;
+  display: flex;
+}
+
+.contact > p {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact > form > input, textarea {
+  text-indent: 12px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  margin: 2%;
+}
+
+.contact > form > .btn {
+  background-color: #41644a;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  font-weight: 600;
+}
+
+.contact > form > .btn:hover {
+  color: #fff;
+  background-color: #54a80a;
+}
+
+.restaurant-summary {
+  color: #fff;
+  background-color: #00040a;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+}
+
+.restaurant-summary-details > h2 {
+  font-size: 2.3rem !important;
+}
+
+.restaurant-details {
+  line-height: 3;
+  display: flex;
+}
+
+.res-container > img {
+  width: 90%;
+}
+
+.restaurant-menu-content {
+  margin: auto;
+}
+
+.menu-title-wrap {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+}
+
+.menu-title-wrap > h3 {
+  color: #640d11;
+  font-size: 2rem;
+}
+
+.menu-title-wrap > p {
+  color: #171616;
+}
+
+.menu-items-list {
+  flex-flow: column wrap;
+  display: flex;
+}
+
+.menu-item {
+  border-bottom: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto auto 1rem;
+  padding: 2rem;
+  display: flex;
+  box-shadow: -1px 0 1px #70707033;
+}
+
+.menu-item-details {
+  width: 60%;
+  max-width: 60%;
+  margin-right: 2rem;
+}
+
+.menu-img-wrapper {
+  flex-direction: column;
+  display: flex;
+}
+
+.add-btn {
+  justify-content: center;
+  width: 50%;
+  margin: 2% auto auto;
+}
+
+.add-btn:hover {
+  background-color: orange;
+  color: #379237 !important;
+}
+
+#wrapper {
+  contain: content;
+  z-index: -1;
+  background: url("about-us1.fe20c59c.jpg") center / cover no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+
+.content {
+  float: right;
+  flex-flow: column wrap;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.content > h2 {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 7rem;
+  padding: 1rem;
+  font-size: 200%;
+}
+
+.content > p {
+  color: #fff;
+  width: 60%;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.content > a {
+  color: #fff;
+  background-color: #08b619;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.card-about-me {
+  background-color: #e0ffff;
+  border: 1px solid #d3d3d3;
+  justify-content: center;
+  width: 100vh;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+}
+
+.about-img > img {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.detail-about {
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.detail-about > p {
+  line-height: none;
+}
+
+.cartItems-list {
+  padding: 1rem;
+  display: flex;
+}
+
+.cart-item {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 20%;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: -1px 5px 10px 5px #70707033;
+}
+
+.cart-item > img {
+  width: 100%;
+}
+
+.cart-item > p {
+  font-size: 14px;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+  box-shadow: -1px 4px 20px 14px #38363633;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

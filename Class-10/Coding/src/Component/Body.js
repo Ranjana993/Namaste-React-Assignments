@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import Resturant from "./ResturantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-// import { filterData } from "../helper";
-import useResData from "../hooks/useResData";
 import useOnline from "../hooks/useOnline";
-import { swiggy_api_URL } from "../../constant";
 import { filterData } from "../../helper";
+import { swiggy_api_URL } from "../../constant";
+import useResData from "../hooks/useResData";
 
 
 
@@ -14,13 +13,15 @@ const Body = () => {
     const [searchText, setSearchText] = useState("");
     const [filteredRestaurants, setFilteredRestaurants] = useState(null);
     const [errorMessage, setErrorMessage] = useState("");
-    const [allRestaurants, filteredRes] = useResData(swiggy_api_URL) // custom hook from useRes 
+    const [allRestaurants, filteredRestaurant] = useResData(swiggy_api_URL) // custom hook from useRes
     const isOnline = useOnline()
 
     if (!isOnline) {
         return <h1> 🔴 You are offline </h1>
     }
 
+console.log(allRestaurants)
+    
     const searchData = (searchText, restaurants) => {
         if (searchText !== "") {
             const data = filterData(searchText, restaurants);
@@ -54,12 +55,12 @@ const Body = () => {
             </div>
             {errorMessage}
             {
-                allRestaurants?.length === 0 && filteredRes?.length === 0 ? <Shimmer /> : (
+                allRestaurants?.length === 0 && filteredRestaurant?.length === 0 ? <Shimmer /> : (
                     <div className="flex flex-row flex-wrap m-auto">
                         {
-                            (filteredRestaurants === null ? filteredRes : filteredRestaurants).map((restaurant) => {
+                            (filteredRestaurants === null ? filteredRestaurant : filteredRestaurants)?.map((restaurant) => {
                                 return (
-                                    <Link to={`/resturant/${restaurant?.data.id}`} key={restaurant?.data.id}>
+                                    <Link to={`/resturant/${restaurant?.data?.id}`} key={restaurant?.data?.id}>
                                         <Resturant  {...restaurant.data} />
                                     </Link>
                                 )

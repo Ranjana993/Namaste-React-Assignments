@@ -1,29 +1,32 @@
-import React, { Suspense, lazy } from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-// import "./style.css"
+import "./style.css"
 import Header from "./Component/Header";
 import Body from "./Component/Body";
 import Footer from "./Component/Footer";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, errorElement, Outlet } from "react-router-dom";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Error from "./Pages/Error";
 import ResturantDetail from "./Pages/ResturantDetail";
-import Shimmer from "./Component/Shimmer";
-// import Shimmer from "./Component/Shimmer";
-import Instamart from "./Component/Instamart";
+import Instamart from "./Pages/Instamart";
+import { Provider } from "react-redux";
+import store from "./store";
+import Cart from "./Pages/Cart";
 
-
-// const Instamart = lazy(() => import('./Component/Instamart'))     
 
 
 
 const Applayout = () => {
     return (
         <>
-            <Header />
-            <Outlet />
-            <Footer />
+            <Provider store={store}>
+                <Header />
+                <Outlet />
+                {/* <About />*/}
+                {/* <Body />  */}
+                <Footer />
+            </Provider>
         </>
     )
 }
@@ -47,13 +50,18 @@ const appRouter = createBrowserRouter([
                 element: <Contact />
             },
             {
-                path: '/resturant/:id',
-                element: <ResturantDetail />
+                path: '/instamart',
+                element: <Instamart />
             },
             {
-                path: '/instamart',
-                element: <Suspense fallback={<Shimmer/>}>  <Instamart /> </Suspense>
+                path: '/cart',
+                element: <Cart />
+            },
+            {
+                path: '/resturant/:id',
+                element: <ResturantDetail />
             }
+
         ]
     },
 

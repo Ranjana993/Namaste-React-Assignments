@@ -2947,7 +2947,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _styleCss = require("./style.css");
+var _styleCss = require("././style.css");
 var _header = require("./Component/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _body = require("./Component/Body");
@@ -3060,7 +3060,7 @@ $RefreshReg$(_c, "Applayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./style.css":"dRy26","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Component/Header":"bJOHE","./Component/Body":"9FvxW","./Component/Footer":"3eCXm","react-router-dom":"9xmpe","./Pages/About":"dlHWA","./Pages/Contact":"dbAeu","./Pages/Error":"i2ELl","./Pages/ResturantDetail":"77aJj","./Pages/Instamart":"lHTn6"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Component/Header":"bJOHE","./Component/Body":"9FvxW","./Component/Footer":"3eCXm","react-router-dom":"9xmpe","./Pages/About":"dlHWA","./Pages/Contact":"dbAeu","./Pages/Error":"i2ELl","./Pages/ResturantDetail":"77aJj","./Pages/Instamart":"lHTn6","././style.css":"dRy26"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27245,7 +27245,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"dRy26":[function() {},{}],"gkKU3":[function(require,module,exports) {
+},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -34531,6 +34531,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hF8lp","1xC6H","igcvL"], "igcvL", "parcelRequire06cd")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dRy26":[function() {},{}]},["hF8lp","1xC6H","igcvL"], "igcvL", "parcelRequire06cd")
 
 //# sourceMappingURL=index.5baa4167.js.map

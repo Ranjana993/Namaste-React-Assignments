@@ -5,7 +5,7 @@ const Header = () => {
     const [isLogin, setIslogin] = useState(false)
     return (
         <>
-            <div id="header" className="bg-green-400 flex p-3 justify-between">
+            <div id="header" className="bg-green-900 flex text-white font-bold p-3 justify-between">
                 <div id="title">
                     <img className="h-10 rounded-full" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7ZoFvwEHERij_tgIsHf2aaKZivP_fPcg1Q&usqp=CAU"} alt="logo"  />
                 </div>
