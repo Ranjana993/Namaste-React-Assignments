@@ -1,0 +1,21 @@
+.payment_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(rgb(234, 227, 227) , hwb(352 87% 4%));
+    padding: 2%;
+}
+.payment_img,
+.payment_info {
+    width: 50%;
+}
+.payment_img >img{
+    width: 30%;
+}
+.payment_info >h4{
+    text-align: center;
+    font-size: 200%;
+    font-weight: 400;
+}

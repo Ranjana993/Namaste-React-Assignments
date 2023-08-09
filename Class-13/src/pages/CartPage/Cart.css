@@ -1,0 +1,14 @@
+.cart_container{
+    margin: auto;
+    margin: auto 5rem;
+    padding: 2%;
+}
+.cart_container >img{
+    width: 30%;
+    margin-left: 33%;
+    margin-top: 2%;
+}
+.cart_container >h1{
+    text-align: center;
+    font-weight: 400;
+}
